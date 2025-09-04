@@ -1,7 +1,9 @@
 'use client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function FormularioDenuncia() {
+  const router = useRouter();
   const [descricao, setDescricao] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
